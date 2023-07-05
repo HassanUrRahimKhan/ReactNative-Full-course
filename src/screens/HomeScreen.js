@@ -1,8 +1,12 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
 
-const HomeScreen = () => {
-  return <Text style={styles.text}>HomeScreen</Text>;
+const HomeScreen = ({navigation}) => {
+  return <View>
+    <TouchableOpacity onPress={()=>navigation.navigate("ApiList")}>
+      <Text style={{color:"red"}}>Go to Api list Screen</Text>
+    </TouchableOpacity>
+  </View>
 };
 
 const styles = StyleSheet.create({
