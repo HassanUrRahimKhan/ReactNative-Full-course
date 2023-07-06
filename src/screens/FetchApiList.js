@@ -40,9 +40,9 @@ const FetchApiList = () => {
   return (
     <View>
       <FlatList
-        data={data}
+        data={resource}
         renderItem={({ item }) => <Text style={{ marginVertical: 10 }}>{item.title}</Text>}
-        keyExtractor={data.id}
+        keyExtractor={resource.id}
         showsHorizontalScrollIndicator={false}
 
       />
