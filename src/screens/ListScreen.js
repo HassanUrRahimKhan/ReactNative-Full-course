@@ -4,7 +4,6 @@ import React from 'react'
 const ListScreen = () => {
     const data=[
         {name:"Hassan",company:"XpertDigital",id:"1"},
-        {name:"Ayesha",company:"Monk co",id:"2"},
         {name:"Mouzamma",company:"brand h20",id:"3"},
         {name:"Anas",company:"Tech Garage",id:"4"},
         {name:"Ahmed",company:"Dechains",id:"5"},

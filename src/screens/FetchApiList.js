@@ -1,8 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import { FlatList } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const FetchApiList = () => {
+const FetchApiList = ({navigation}) => {
 
   const [resource, setResource] = useState([]);
 
@@ -46,6 +47,7 @@ const FetchApiList = () => {
         showsHorizontalScrollIndicator={false}
 
       />
+     
     </View>
   )
 }

@@ -6,6 +6,8 @@ import ListScreen from "./src/screens/ListScreen";
 import FetchApiList from "./src/screens/FetchApiList";
 import ImageScreen from "./src/screens/ImageScreen";
 import CounterScreen from "./src/screens/CounterScreen";
+import AddColorScreen from "./src/screens/AddColorScreen";
+import SquareScreen from "./src/screens/SquareScreen";
 
 const navigator = createStackNavigator(
   {
@@ -15,9 +17,11 @@ const navigator = createStackNavigator(
     ApiList: FetchApiList,
     ImgScreen : ImageScreen,
     Counter : CounterScreen,
+    Addcolor: AddColorScreen,
+    SquareScreen: SquareScreen
   },
   {
-    initialRouteName: "Counter",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "App",
     },

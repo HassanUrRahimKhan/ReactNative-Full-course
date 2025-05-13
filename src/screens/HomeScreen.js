@@ -6,6 +6,17 @@ const HomeScreen = ({navigation}) => {
     <TouchableOpacity onPress={()=>navigation.navigate("ApiList")}>
       <Text style={{color:"red"}}>Go to Api list Screen</Text>
     </TouchableOpacity>
+     <TouchableOpacity>
+            <Text style={{ fontSize: 30, color: "red" }} onPress={() => navigation.navigate("ImgScreen")}>Go to Image screen</Text>
+    </TouchableOpacity>
+    <TouchableOpacity>
+            <Text style={{ fontSize: 30, color: "red" }} onPress={() => navigation.navigate("Addcolor")}>Go to Add color screen</Text>
+    </TouchableOpacity>
+
+    <TouchableOpacity>
+            <Text style={{ fontSize: 30, color: "red" }} onPress={() => navigation.navigate("SquareScreen")}>Go to Square screen</Text>
+    </TouchableOpacity>
+
   </View>
 };
 
